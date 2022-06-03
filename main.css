@@ -1,37 +1,37 @@
-body {
-  margin: 0px;
-  padding: 0px;
+* {
+  box-sizing: border-box;
+  font-family: poppins, arial;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: white;
+  height: 100px;
 }
 
-header {
-  height: 60px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: white;
+nav {
+  padding: 1% 0% 0% 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-right: 30px;
 }
 
 .nav-list {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.nav-item {
   list-style: none;
-  margin-right: 25px;
 }
 
-.nav-item a {
-  font-family: poppins, arial;
+nav ul li a {
   text-decoration: none;
   color: black;
 }
 
-.nav-item:first-child {
-  margin-right: auto;
-  font-size: 16px;
+.name {
+  font-size: 20px;
 }
 
 .project-button {
@@ -44,4 +44,28 @@ header {
 
 .projects-link {
   font-size: 16px;
+}
+
+.grid-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.grid-item-1 {
+  background-color: white;
+}
+
+.dev-image {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+}
+
+.hi-there {
+  font-size: 50px;
 }
