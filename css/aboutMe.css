@@ -21,12 +21,14 @@
 .arrow {
   display: flex;
   justify-content: center;
-  margin-bottom: 30rem;
+  margin-bottom: 25rem;
 }
 
 .arrow img {
   width: 4%;
   height: auto;
+  background-color: #ec9b3b;
+  border-radius: 100%;
 }
 
 .journey-so-far {
@@ -36,20 +38,46 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 20%;
   grid-row-gap: 1rem;
   grid-column-gap: 3rem;
+  margin-left: 5%;
 }
 
-.skill-container {
+.skill-col-container {
   grid-row-start: 1;
   grid-row-end: 3;
-}
-
-.skill-container {
   grid-column: 2;
 }
 
+.skill-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 20px;
+}
+
 .skills {
+  text-transform: uppercase;
   display: inline-block;
+  border: solid;
+  border-radius: 1px;
+  border-color: black;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 3.75rem;
+}
+
+.p-3 {
+  grid-column: 1;
+}
+
+.journey-background {
+  padding: 7rem 0;
+  height: 100%;
+  background-color: #f7d716;
+}
+
+.test {
+  background-color: #293462;
 }
