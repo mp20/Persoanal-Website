@@ -1,12 +1,9 @@
-* {
-  box-sizing: border-box;
-  font-family: poppins, arial;
-  margin: 0;
-  padding: 0;
-}
 header {
+  position: sticky;
+  top: 0;
   background-color: white;
   height: 100px;
+  margin-bottom: 5rem;
 }
 
 nav {
@@ -30,7 +27,12 @@ nav ul li a {
   color: black;
 }
 
+nav ul li a:hover {
+  color: #f0a500;
+}
+
 .name {
+  color: #1b1a17;
   font-size: 20px;
 }
 
@@ -39,33 +41,15 @@ nav ul li a {
   width: 100px;
   border: none;
   border-radius: 20px;
-  background-color: #86c232;
+  background-color: #1b1a17;
 }
 
 .projects-link {
+  color: #f0a500;
   font-size: 16px;
 }
 
-.grid-container {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-column-gap: 2%;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-.grid-item-1 {
-  background-color: white;
-}
-
-.dev-image {
-  display: inline-block;
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
-}
-
-.hi-there {
-  font-size: 50px;
+.projects-link:hover {
+  color: white;
+  font-size: 16px;
 }

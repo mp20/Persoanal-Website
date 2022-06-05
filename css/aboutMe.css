@@ -1,0 +1,55 @@
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20rem;
+}
+
+.about-me-container div {
+  width: 50%;
+}
+
+.about-me-container div p {
+  font-size: 1.5rem;
+}
+
+.hi-there {
+  font-size: 5rem;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30rem;
+}
+
+.arrow img {
+  width: 4%;
+  height: auto;
+}
+
+.journey-so-far {
+  font-size: 2.75rem;
+  font-weight: 500;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1rem;
+  grid-column-gap: 3rem;
+}
+
+.skill-container {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.skill-container {
+  grid-column: 2;
+}
+
+.skills {
+  display: inline-block;
+}
