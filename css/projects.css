@@ -1,0 +1,37 @@
+.projects {
+  margin-left: 5%;
+  margin-right: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: solid;
+  border-width: 1.6px;
+  border-radius: 20px;
+  grid-column-gap: 2rem;
+  padding: 2rem 1.25rem 5rem 1.25rem;
+}
+
+.projects div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+
+.my-projects {
+  margin-left: 5%;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  cursor: pointer;
+  border: solid;
+  background-color: white;
+  width: 100px;
+  border-radius: 50px;
+}
+
+.project-heading {
+  font-weight: 600;
+}
