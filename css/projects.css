@@ -1,37 +1,58 @@
-.projects {
-  margin-left: 5%;
-  margin-right: 5%;
+.projects-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1rem;
+  grid-template-rows: 10% 1fr 10%;
   border: solid;
-  border-width: 1.6px;
+  border-width: 2px;
   border-radius: 20px;
-  grid-column-gap: 2rem;
-  padding: 2rem 1.25rem 5rem 1.25rem;
+  margin: 0 10% 0 10%;
+  padding: 1.2rem 1.5rem 1.2rem 1.5rem;
 }
 
-.projects div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.projects-container div p {
   text-align: center;
-  gap: 20px;
+}
+
+.project-itunes-description {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.project-minesweeper-description {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.project-hashmap-description {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.project-button {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+  grid-row-start: 3;
 }
 
 .my-projects {
-  margin-left: 5%;
+  margin-left: 10%;
   margin-bottom: 1.5rem;
 }
 
 button {
+  grid-row-start: 3;
   cursor: pointer;
   border: solid;
-  background-color: white;
+  background-color: #4bd35c;
   width: 100px;
   border-radius: 50px;
 }
 
-.project-heading {
+.projects-heading {
   font-weight: 600;
 }
